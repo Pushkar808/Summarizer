@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/layout/Navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,9 +26,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
+        <Navbar />
         {children}
+        <footer className="bg-gray-100 text-center py-6 text-gray-600 text-sm">
+          © 2025 Summarizer. Made with ❤️ by Pushkar Gupta. | Powered by OpenAI
+        </footer>
+
       </body>
     </html>
   );

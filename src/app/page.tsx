@@ -2,102 +2,111 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <main className="bg-white text-black">
+      <section className="h-full w-full ">
+        <div className="relative bg-white pb-[80px]">
+          <img
+            src="/images/bg.png"
+            alt="Background"
+            className="w-full h-full object-contain"
+          />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          <div className="absolute flex flex-col gap-10 top-20 w-full px-4 text-white z-10 items-center">
+            <h1 className="text-4xl md:text-5xl font-extrabold text-center">
+              Instantly Summarize any Blogs <br /> with AI
+            </h1>
+            <p className="text-lg md:text-xl px-24 text-center">
+              Paste any blog URL and get a crisp, AI-powered summary — perfect for quick reading, sharing, or saving time. <br /> Powered by OpenAI & optimized for modern readers.
+            </p>
+            <div>
+              <a href="#startNow" className="text-white bg-black hover:bg-white hover:text-black font-medium rounded-lg text-sm px-8 py-3 me-2 mb-2 focus:outline-none cursor-pointer ">Start Summarize</a>
+            </div>
+          </div>
+          <div className="w-full h-full absolute top-1/2">
+            <img src={"/images/homeImg.png"} className="w-1/3 h-80 rounded-2xl mx-auto border-[1.5px] border-black" />
+          </div>
+
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+
+      <section className="py-16 text-center px-6 relative w-full  bg-[#019bff] clip-diagonal">
+        <h2 className="text-3xl font-bold mb-10">Why Use Our Summarizer ?</h2>
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="bg-white shadow-md p-6 rounded-xl border-[1.5px]">
+            <h3 className="text-xl font-semibold mb-2">Fast & Accurate</h3>
+            <p className="text-gray-600">Summaries in seconds using advanced AI — skip the fluff and get straight to the point.</p>
+          </div>
+          <div className="bg-white shadow-md p-6 rounded-xl  border-[1.5px]">
+            <h3 className="text-xl font-semibold mb-2">SEO-Ready Output</h3>
+            <p className="text-gray-600">Perfect for bloggers and content creators who want to repurpose content quickly.</p>
+          </div>
+          <div className="bg-white shadow-md p-6 rounded-xl  border-[1.5px]">
+            <h3 className="text-xl font-semibold mb-2">Chat With the Blog</h3>
+            <p className="text-gray-600">Coming soon: interact with the blog content like ChatGPT — ask questions, clarify points, and more!</p>
+          </div>
+        </div>
+      </section>
+
+
+      <section className="h-full w-full bg-white py-16 text-center flex flex-col items-center gap-4" id="startNow">
+        <h3 className="text-3xl font-bold mb-4">Start Summarizing Smarter</h3>
+        <input type="text" placeholder="https://link-to-your-blog" className="w-1/2 h-10 px-2 border-[1.5px] border-gray-500 rounded-xl " />
+        <p>No sign-up required. It's free, fast, and built for content junkies like you.</p>
+        <div>
+          <button type="button" className="text-white bg-black hover:bg-white hover:text-black font-medium rounded-lg text-sm px-8 py-3 me-2 mb-2 focus:outline-none cursor-pointer ">Summarize This</button>
+        </div>
+      </section>
+
+
+
+
+      <section className="bg-black py-16 px-6 text-center">
+        <h2 className="text-3xl font-bold text-white mb-10">Summarizer Features</h2>
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto text-left">
+          <div className="bg-white shadow-md p-6 rounded-xl">
+            <h3 className="text-xl font-semibold mb-2">🚀 Super Fast Summaries</h3>
+            <p className="text-gray-600">Don't waste time reading long posts. Get summaries instantly.</p>
+          </div>
+          <div className="bg-white shadow-md p-6 rounded-xl">
+            <h3 className="text-xl font-semibold mb-2">🔐 No Signup Required</h3>
+            <p className="text-gray-600">Just paste and summarize. No emails. No hassle.</p>
+          </div>
+          <div className="bg-white shadow-md p-6 rounded-xl">
+            <h3 className="text-xl font-semibold mb-2">🧠 GPT-4o Powered</h3>
+            <p className="text-gray-600">Backed by the smartest models available for text understanding.</p>
+          </div>
+          <div className="bg-white shadow-md p-6 rounded-xl">
+            <h3 className="text-xl font-semibold mb-2">🌐 SEO Friendly Output</h3>
+            <p className="text-gray-600">Useful for bloggers, content creators & marketers.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-white text-center">
+        <h2 className="text-3xl font-bold mb-6">Perfect For</h2>
+        <div className="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto">
+          <span className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">Students</span>
+          <span className="bg-green-100 text-green-800 px-4 py-2 rounded-full">Bloggers</span>
+          <span className="bg-purple-100 text-purple-800 px-4 py-2 rounded-full">Researchers</span>
+          <span className="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full">Marketers</span>
+          <span className="bg-pink-100 text-pink-800 px-4 py-2 rounded-full">Founders</span>
+        </div>
+      </section>
+
+      <section className="py-16 bg-amber-400">
+        <h2 className="text-center text-3xl font-bold mb-12">Loved by Users</h2>
+        <div className="max-w-4xl mx-auto space-y-6">
+          <blockquote className="bg-white p-6 rounded-lg shadow">
+            <p className="text-gray-700 italic">“Summarizer saved me hours every week!”</p>
+            <span className="text-sm text-gray-500 mt-2 block">— Anjali, Content Writer</span>
+          </blockquote>
+        </div>
+      </section>
+
+
+
+
+    </main>
+
   );
 }
