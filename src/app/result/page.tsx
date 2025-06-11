@@ -6,9 +6,9 @@ import { IoIosPrint, IoIosRefresh, IoIosShareAlt } from 'react-icons/io'
 
 export default function Page() {
     return (
-        <div className='text-black grid grid-cols-2 gap-10 px-4'>
-            <section className='w-full h-full bg-white border-[1.5px] border-black rounded-lg shadow-sm '>
-                <div className='p-6 break-all flex gap-4'>
+        <div className='text-black md:grid grid-cols-2 grid-rows-1 gap-10 px-4 py-2 h-full'>
+            <section className='w-full h-full bg-white border-[1.5px] border-black rounded-lg shadow-sm md:m-0 mb-6'>
+                <div className='p-6 break-all flex md:flex-row flex-col gap-4'>
                     <div>
                         <img src="images/Loader.png" className='w-10 h-10 rounded-full' />
                     </div>
@@ -31,8 +31,8 @@ export default function Page() {
                 </div>
             </section>
             <section className='w-full bg-white border-[1.5px] border-black rounded-lg shadow-sm  h-full'>
-                <div className='p-6 flex gap-4'>
-                    <div className='md:w-1/2 flex flex-col items-center '>
+                <div className='p-6 flex md:flex-row flex-col gap-4'>
+                    <div className='md:w-1/2 w-full flex flex-col items-center '>
                         <h5 className=''>Content score</h5>
                         <div className='w-full h-full'>
                             <ReactSpeedometer

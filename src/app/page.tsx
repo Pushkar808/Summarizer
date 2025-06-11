@@ -13,7 +13,7 @@ export default function Home() {
           />
 
           <div className="absolute flex flex-col gap-10 top-20 w-full px-4 text-white z-10 items-center">
-            <h1 className="text-4xl md:text-5xl font-extrabold text-center">
+            <h1 className="text-3xl md:text-5xl font-extrabold text-center">
               Instantly Summarize any Blogs <br /> with AI
             </h1>
             <p className="text-lg md:text-xl px-24 text-center">
