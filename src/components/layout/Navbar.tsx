@@ -1,10 +1,11 @@
+import Link from 'next/link'
 import React from 'react'
 
 export default function Navbar() {
     return (
 
 
-        <nav className="bg-white border-gray-200  ">
+        <nav className="bg-white border-gray-200 border-b ">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
                     <img src="/images/logo.png" className="h-8" alt="Flowbite Logo" />
@@ -18,16 +19,16 @@ export default function Navbar() {
                 <div className="hidden w-full md:block md:w-auto" id="navbar-multi-level">
                     <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white  ">
                         <li>
-                            <a href="#" className="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 " aria-current="page">Home</a>
+                            <Link href="/" className="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 " aria-current="page">Home</Link>
                         </li>
                         <li>
-                            <a href="#" className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Why Us</a>
+                            <Link href="#" className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Why Us</Link>
                         </li>
                         <li>
-                            <a href="#" className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Features</a>
+                            <Link href="#" className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Features</Link>
                         </li>
                         <li>
-                            <a href="#startNow" className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Try Now</a>
+                            <Link href="#startNow" className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Try Now</Link>
                         </li>
                     </ul>
                 </div>

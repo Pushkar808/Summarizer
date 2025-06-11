@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -53,7 +54,7 @@ export default function Home() {
         <input type="text" placeholder="https://link-to-your-blog" className="w-1/2 h-10 px-2 border-[1.5px] border-gray-500 rounded-xl " />
         <p>No sign-up required. It's free, fast, and built for content junkies like you.</p>
         <div>
-          <button type="button" className="text-white bg-black hover:bg-white hover:text-black font-medium rounded-lg text-sm px-8 py-3 me-2 mb-2 focus:outline-none cursor-pointer ">Summarize This</button>
+          <Link href={"/result"} className="text-white bg-black hover:bg-white hover:text-black hover:border-[1.5px] border-black font-medium rounded-lg text-sm px-8 py-3 me-2 mb-2 focus:outline-none cursor-pointer ">Summarize This</Link>
         </div>
       </section>
 
