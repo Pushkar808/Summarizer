@@ -34,10 +34,8 @@ export default function Page() {
                 <div className='p-6 flex md:flex-row flex-col gap-4'>
                     <div className='md:w-1/2 w-full flex flex-col items-center '>
                         <h5 className=''>Content score</h5>
-                        <div className='w-full h-full'>
+                        <div className='w-full md:h-full h-44'>
                             <ReactSpeedometer
-                                width={200}
-                                height={100}
                                 maxValue={100}
                                 value={50}
                                 labelFontSize="0px"

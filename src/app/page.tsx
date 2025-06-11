@@ -9,22 +9,24 @@ export default function Home() {
           <img
             src="/images/bg.png"
             alt="Background"
-            className="w-full h-full object-contain"
+            className="w-full md:h-full h-screen md:object-contain"
           />
 
           <div className="absolute flex flex-col gap-10 top-20 w-full px-4 text-white z-10 items-center">
             <h1 className="text-3xl md:text-5xl font-extrabold text-center">
               Instantly Summarize any Blogs <br /> with AI
             </h1>
-            <p className="text-lg md:text-xl px-24 text-center">
-              Paste any blog URL and get a crisp, AI-powered summary — perfect for quick reading, sharing, or saving time. <br /> Powered by OpenAI & optimized for modern readers.
+            <p className="text-lg md:text-xl md:px-24 text-center">
+              Paste any blog URL and get a crisp, AI-powered summary - perfect for quick reading, sharing, or saving time.
+              <br />
+              Powered by OpenAI & optimized for modern readers.
             </p>
             <div>
               <a href="#startNow" className="text-white bg-black hover:bg-white hover:text-black font-medium rounded-lg text-sm px-8 py-3 me-2 mb-2 focus:outline-none cursor-pointer ">Start Summarize</a>
             </div>
           </div>
-          <div className="w-full h-full absolute top-1/2">
-            <img src={"/images/homeImg.png"} className="w-1/3 h-80 rounded-2xl mx-auto border-[1.5px] border-black" />
+          <div className="w-full h-full absolute md:top-1/2 top-[52%]">
+            <img src={"/images/homeImg.png"} className="h-96 rounded-2xl mx-auto border-[1.5px] border-black" />
           </div>
 
         </div>
@@ -51,7 +53,7 @@ export default function Home() {
 
       <section className="h-full w-full bg-white py-16 text-center flex flex-col items-center gap-4" id="startNow">
         <h3 className="text-3xl font-bold mb-4">Start Summarizing Smarter</h3>
-        <input type="text" placeholder="https://link-to-your-blog" className="w-1/2 h-10 px-2 border-[1.5px] border-gray-500 rounded-xl " />
+        <input type="text" placeholder="https://link-to-your-blog" className="md:w-1/2 w-4/5 h-10 px-2 border-[1.5px] border-gray-500 rounded-xl " />
         <p>No sign-up required. It's free, fast, and built for content junkies like you.</p>
         <div>
           <Link href={"/result"} className="text-white bg-black hover:bg-white hover:text-black hover:border-[1.5px] border-black font-medium rounded-lg text-sm px-8 py-3 me-2 mb-2 focus:outline-none cursor-pointer ">Summarize This</Link>
@@ -96,7 +98,7 @@ export default function Home() {
 
       <section className="py-16 bg-amber-400">
         <h2 className="text-center text-3xl font-bold mb-12">Loved by Users</h2>
-        <div className="max-w-4xl mx-auto space-y-6">
+        <div className="max-w-4xl md:mx-auto mx-4 space-y-6">
           <blockquote className="bg-white p-6 rounded-lg shadow">
             <p className="text-gray-700 italic">“Summarizer saved me hours every week!”</p>
             <span className="text-sm text-gray-500 mt-2 block">— Anjali, Content Writer</span>
